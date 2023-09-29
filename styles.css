@@ -1,1 +1,36 @@
 /*  your css code here. If applicable */
+
+.grid-container{
+/* 	width: */
+	display:grid;
+	grid-template-columns:repeat(9, 200px);
+	grid-template-rows:repeat(1, 150px);
+	flex-wrap:wrap;
+	gap:10px;
+}
+.grid-item{
+/* 	 */
+/* 	 */
+	background-color:lightgray;
+	border-radius:5px;
+	font-size:40px;
+}
+@media screen and (max-width:1080px){
+	.grid-container{
+/* 	width: */
+		display:flex;
+	flex-wrap:wrap;
+	gap:10px;
+}
+	.grid-item{
+
+	height:150px;
+	width:200px;
+	flex-wrap:wrap;
+	
+}
+}
+
+
+
+
